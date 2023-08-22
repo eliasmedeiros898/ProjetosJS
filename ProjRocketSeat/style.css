@@ -1,89 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&family=Inter:wght@400;500&family=Poppins:wght@400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --text-color: white;
     --bg-image: url(./assets/bg-mobile.jpg);
-    --stroke-color: rgba(255,255,255,0.5);
-    --surface-color: rgba(255,255,255,0.05);
-    --surface-color-hover: rgba(255,255,255,0.02);
-    --highlight-color: rgba(255,255,255,0.2);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(255, 255, 255, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/Sun.svg);
+
 }
 
-.light{
+.light {
     --text-color: black;
     --bg-image: url(./assets/bg-mobile-light.jpg);
-    --stroke-color: rgba(0,0,0,0.5);
-    --surface-color: rgba(0,0,0,0.05);
-    --surface-color-hover: rgba(0,0,0,0.02);
-    --highlight-color: rgba(0,0,0,0.1);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./assets/MoonStars.svg);
 }
 
-body{
+body {
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 100vh;
 
 
 }
 
-body *{
+body * {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
 }
 
-#container{
+#container {
     width: 100%;
-    max-width: 580px;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0px 24px;
-    
-   
+
+
 
 
 }
-#profile{
+
+#profile {
     margin-top: 56px;
     padding: 24px;
 }
 
 
-#profile img{
+#profile img {
     width: 112px;
     text-align: center;
     display: block;
     margin: auto;
 }
 
-#profile h2{
+#profile h2 {
     margin-top: 8px;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
 }
 
-#switch{
+#switch {
     position: relative;
     width: 64px;
     margin: 4px auto;
-    
+
 }
 
-.light #switch button{
+.light #switch button {
     right: 0;
     left: initial;
-    
+
 }
 
-#switch button{
+#switch button {
     width: 32px;
     height: 32px;
     background: white;
@@ -96,10 +99,10 @@ body *{
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
-    top:50%
+    top: 50%
 }
 
-#switch span{
+#switch span {
     display: block;
     width: 64px;
     height: 24px;
@@ -110,20 +113,20 @@ body *{
     border-radius: 9999px;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding-bottom: 24px;
     padding-top: 24px;
-    
+
 
 
 }
 
-ul li a{
-    
+ul li a {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,20 +142,20 @@ ul li a{
 
 }
 
-ul li a:hover{
+ul li a:hover {
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
 
-#social-links{
+#social-links {
     display: flex;
     justify-content: center;
     padding: 24px;
-    
+
 
 }
 
-#social-links a{
+#social-links a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,22 +164,32 @@ ul li a:hover{
     border-radius: 50%;
 }
 
-#social-links a:hover{
+#social-links a:hover {
     background: var(--highlight-color);
     padding: 16px;
-    
 
-    
+
+
 }
 
-ion-icon{
+ion-icon {
     font-size: 24px;
     cursor: pointer;
 }
 
 
-footer{
+footer {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-image: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-image: url(./assets/bg-desktop-light.jpg);
+    }
 }
