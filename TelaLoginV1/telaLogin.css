@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald&display=swap');
+
+*{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+form{
+    background-color: rgb(197, 197, 197);
+    border-radius: 5%;
+    max-width: 400px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(21, 26, 23);
+    
+    
+    
+    
+    
+}
+
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    left: 5%;
+    margin: 0;
+
+}
+
+footer{
+    color: aliceblue;
+    position: fixed;
+    top: 92%;
+}
+
+input {
+   
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#button:hover{
+    border-radius: 10px;
+    background-color: rgb(218, 248, 248);
+}
+
+#button{
+    width: 360px;
+}
+
+#userMail:focus, #userPassword:focus{
+    border-color: rgb(248, 255, 146);
+
+}
+
+span{
+    color: rgb(30, 30, 77);
+}
+
+#forgotPassword{
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+    text-align: right;
+    
+}

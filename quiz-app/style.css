@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 100px;
+    padding: 20px;
+    background: linear-gradient();
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    background: linear-gradient(#e664e6, #303aad);
+    justify-content: space-around;
+}
+
+
+
+button{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    background: linear-gradient(127deg,rgb(0, 0, 0),rgb(94, 94, 223));
+}
+
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(127deg,rgb(0, 0, 0),rgb(1, 1, 136));
+}
+
+label#name{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+
+}
+
+input#name{
+    border-radius: 5px;
+    border: none;
+    width: 40vh;
+    height: 25px;
+    align-items: center;
+}
+
